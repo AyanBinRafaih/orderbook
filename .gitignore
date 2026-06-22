@@ -1,0 +1,11 @@
+build/
+*.o
+*.a
+*.dylib
+.DS_Store
+__pycache__/
+*.pyc
+analysis/data/*.csv
+analysis/data/*.bin
+.venv/
+.cache/
