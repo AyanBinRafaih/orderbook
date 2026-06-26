@@ -45,7 +45,7 @@ std::vector<Trade> OrderBook::match(Order& incoming) {
                 break;
             }
             // Match against orders at the given price (with respect to time priority)
-            while (incoming.quantity > 0 && !ask_level.orders.empty()) {
+            while ((incoming.quantity > 0) && !ask_level.orders.empty()) {
                 Order& resting = ask_level.orders.front();
                 uint64_t fill_qty = std::min(incoming.quantity, resting.quantity);
 

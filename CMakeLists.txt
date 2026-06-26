@@ -57,9 +57,11 @@ add_executable(orderbook_main src/main.cpp)
 target_link_libraries(orderbook_main PRIVATE orderbook_lib)
 
 enable_testing()
+
 add_executable(orderbook_tests
-	tests/test_order_book.cpp
-	tests/test_matching.cpp
+    tests/test_order_book.cpp
+    tests/test_matching.cpp
+    tests/test_spsc.cpp
 )
 
 target_link_libraries(orderbook_tests PRIVATE orderbook_lib GTest::gtest_main)
