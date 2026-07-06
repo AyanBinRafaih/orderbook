@@ -38,7 +38,7 @@ A baseline matching engine (using mutex protection):
 
 The order book also manages all types of matchings, including exact fills and partial-matches (on both the incoming side and resting side in the book), dealing with remainders.
 
-**Testing** 
+### Testing
 11 unit tests are deployed as a correctness check for the orderbook's functionalities:
 - Creating a new order
 - Lone bid which has no match in the orderbook
