@@ -5,7 +5,7 @@ This is a high-performance limit order book engine in C++20, built with includin
 ## Implementation Details
 
 ### Build System
-The system uses CMake build with C++20, `-Wall -Wextra -Wpedantic`, and `-O3 -march=native` in Release, a ThreadSanatizer to help catch data races in debugging, `ccache` integration for faster rebuilds and it pulls in `GoogleTest` and `Google Benchmark`.
+The system uses CMake build with C++20, `-Wall -Wextra -Wpedantic`, and `-O3 -march=native` in Release, a ThreadSanitizer to help catch data races in debugging, `ccache` integration for faster rebuilds and it pulls in `GoogleTest` and `Google Benchmark`.
 
 ### Data Structures
 - **`Order`**: a cache-line-aligned (to 64 bytes) struct which includes:
