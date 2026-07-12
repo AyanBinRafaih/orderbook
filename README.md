@@ -1,6 +1,6 @@
 # Lock-Free Order Book
 
-This is a high-performance limit order book engine in C++20, built with including a lock-free Single-Producer-Single-Consumer (SPSC) queue and a single-threaded matching engine. The orderbook is built from scratch including all necessary parts. It also includes statistical analysis of latency distributions, including the effect of various optimisations (currently in development). 
+This is a high-performance limit order book in C++20, built with a lock-free Single-Producer-Single-Consumer (SPSC) queue and a single-threaded matching engine. The orderbook is built from scratch including all necessary parts. It also includes statistical analysis of latency distributions, including the effect of various optimisations (currently in development). 
 
 ## Implementation Details
 
