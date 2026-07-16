@@ -37,7 +37,7 @@ std::vector<Trade> OrderBook::match(Order& incoming) {
     std::vector<Trade> trades;
 
     if (incoming.side == Side::Buy) {
-        // Try to match against the asks (lowest ask first)
+        // Try to match against the asks (consider the lowest ask first)
         while (incoming.quantity > 0 && !asks_.empty()) {
             auto& [ask_price, ask_level] = *asks_.begin();
 
@@ -73,7 +73,7 @@ std::vector<Trade> OrderBook::match(Order& incoming) {
         }
     } 
     else {
-        // Try to match against the bids (highest bid first)
+        // Try to match against the bids (consider the highest bid first)
         while (incoming.quantity > 0 && !bids_.empty()) {
             auto& [bid_price, bid_level] = *bids_.begin();
 
