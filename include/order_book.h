@@ -7,7 +7,7 @@
 #include <mutex>
 #include <functional>
 
-// For all orders at a given price (sorted by arrival time) --> oldest first
+// For all orders at a given price (sorted by arrival time), consider the oldest first
 struct PriceLevel {
     double price;
     std::list<Order> orders;
